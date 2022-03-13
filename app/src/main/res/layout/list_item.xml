@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginVertical="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="50dp">
+
+        <ImageView
+            android:id="@+id/IV_friend_photo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TV_friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deepak Kumar"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/TV_friend_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dkumar@ec.iitr.ac.in"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="Connect"
+        android:textAllCaps="false" />
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>
