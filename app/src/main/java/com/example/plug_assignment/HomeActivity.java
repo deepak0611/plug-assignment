@@ -99,6 +99,10 @@ public class HomeActivity extends AppCompatActivity {
                                     Toast.makeText(HomeActivity.this, "Anonymous User deleted", Toast.LENGTH_SHORT).show();
                                     moveToLoginPage();
                                 }
+                                else{
+                                    pleaseWaitDialog.dismiss();
+                                    Toast.makeText(HomeActivity.this, "failed to delete anonymous user", Toast.LENGTH_SHORT).show();
+                                }
                             }
                         });
                     }
@@ -230,7 +234,8 @@ public class HomeActivity extends AppCompatActivity {
                 });
     }
     public void moveToCallPage(String friendUserId, String createdBy){
-        Intent i = new Intent(HomeActivity.this,CallActivity.class);
+//        Intent i = new Intent(HomeActivity.this,CallActivity.class);
+        Intent i = new Intent(HomeActivity.this,MeetActivity.class);
         i.putExtra("user_id",mUserId);
         i.putExtra("friend_user_id",friendUserId);
         i.putExtra("createdBy",createdBy);

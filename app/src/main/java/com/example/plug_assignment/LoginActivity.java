@@ -56,7 +56,11 @@ public class LoginActivity extends AppCompatActivity {
     private String[] mPermissionArray = new String[]{
             Manifest.permission.CAMERA,
             Manifest.permission.RECORD_AUDIO,
-            Manifest.permission.MODIFY_AUDIO_SETTINGS
+            Manifest.permission.MODIFY_AUDIO_SETTINGS,
+            Manifest.permission.BLUETOOTH,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.CHANGE_NETWORK_STATE,
+            Manifest.permission.ACCESS_NETWORK_STATE
     };
 
     @Override
